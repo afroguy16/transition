@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>This is some transitionish :-)</title>
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+    <ul id="modalList">
+        <li id="initialView" class="active">
+            <header>
+                <h2>Your order</h2>
+                <div class="indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <main>
+                <div class="top">
+                    <h3>$0.00</h3>
+                    <p>Plan-Free</p>
+                    <p>This is a freemium plan and hence doesn't have a trial period.</p>
+                </div>
+                <div class="bottom">
+                    <button onClick="transitionNextView()">Proceed to checkout</button>
+                </div>
+            </main>
+        </li>
+
+        <li id="accountDetails">
+            <header>
+                <h2>Add your account details</h2>
+                <div class="indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <main>
+                <div class="top">
+                    <form action="">
+                        <input type="text" id="" placeholder="First Name (Optional)">
+                        <input type="text" id="" placeholder="Last Name (Optional)">
+                        <input type="text" id="" placeholder="Email">
+                    </form>
+                </div>
+                <div class="bottom">
+                    <button onClick="transitionNextView()">Next</button>
+                </div>
+            </main>
+        </li>
+
+        <li id="billingAddress">
+            <header>
+                <h2>Add your billing address</h2>
+                <div class="indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <main>
+                <div class="top">
+                    <form action="">
+                        <input type="text" id="" placeholder="First Name">
+                        <input type="text" id="" placeholder="Last Name">
+                        <input type="text" id="" placeholder="Address Line1">
+                        <input type="text" id="" placeholder="Address Line2 (Optional)">
+                        <input type="text" id="" placeholder="City">
+                        <input type="text" id="" placeholder="Zip (Optional)">
+                        <input type="text" id="" placeholder="State">
+                        <select id="">
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Nigeria">Nigeria</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="bottom">
+                    <button onClick="transitionNextView()">Next</button>
+                </div>
+            </main>
+        </li>
+
+        <li id="paymentDetails">
+            <header>
+                <h2>Add your payment details</h2>
+                <div class="indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <main>
+                <div class="top">
+                    <form action="">
+                        <input type="text" id="" placeholder="Card Number">
+                        <input type="text" id="" placeholder="Expiry">
+                        <input type="text" id="" placeholder="CVV">
+                    </form>
+                </div>
+                <div class="bottom">
+                    <button onClick="transitionNextView()">Next</button>
+                </div>
+            </main>
+        </li>
+
+        <li id="completeOrder">
+            <header>
+                <h2>Complete your order</h2>
+                <div class="indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <main>
+                <div class="top">
+                    <form action="">
+                        <input type="text" id="" placeholder="Plan Free">
+                    </form>
+                </div>
+                <div class="bottom">
+                    <button onClick="transitionNextView()">Subscribe</button>
+                    <p>Secure Checkout by Chargebee</p>
+                </div>
+            </main>
+        </li>
+
+        <li id="close">
+                <button onClick="closeModalFunction()">Close</button>
+            </li>
+    </ul>
+    <header>
+        <div id="one"></div>
+    </header>
+    <main></main>
+    
+    <script src="transition.js"></script>
+</body>
+</html>

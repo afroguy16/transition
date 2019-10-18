@@ -1,0 +1,2 @@
+#modalList li{max-height:0;opacity:0;overflow:hidden;transition:opacity .5s ease-in}#modalList li.active{opacity:1;max-height:1000rem}
+/*# sourceMappingURL=styles.min.css.map */
